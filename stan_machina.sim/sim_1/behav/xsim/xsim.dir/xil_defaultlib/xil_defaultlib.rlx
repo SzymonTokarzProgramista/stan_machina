@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sim_1/new/tb_stan_machina.v,1710840838,verilog,,,,tb_stan_machina,,,,,,,,
+C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/read_stan_machina.v,1710840435,verilog,,C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/states.v,,read_stan_machina,,,,,,,,
+C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/states.v,1710839460,verilog,,C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/write1_stan_machina.v,,states,,,,,,,,
+C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/write1_stan_machina.v,1710841273,verilog,,C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sim_1/new/tb_stan_machina.v,,write1_stan_machina,,,,,,,,

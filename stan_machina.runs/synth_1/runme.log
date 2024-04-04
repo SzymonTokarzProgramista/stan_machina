@@ -1,0 +1,234 @@
+
+*** Running vivado
+    with args -log states.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source states.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source states.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 474.758 ; gain = 178.266
+Command: read_checkpoint -auto_incremental -incremental C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/utils_1/imports/synth_1/states.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/utils_1/imports/synth_1/states.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top states -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14792
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 927.828 ; gain = 438.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'y', assumed default net type 'wire' [C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/states.v:89]
+INFO: [Synth 8-6157] synthesizing module 'states' [C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/states.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'states' (0#1) [C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/states.v:23]
+WARNING: [Synth 8-6014] Unused sequential element d_reg was removed.  [C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/states.v:57]
+WARNING: [Synth 8-6014] Unused sequential element r_y_reg was removed.  [C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/states.v:63]
+WARNING: [Synth 8-3848] Net txd in module/entity states does not have driver. [C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.srcs/sources_1/new/states.v:28]
+WARNING: [Synth 8-7129] Port txd in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[7] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[6] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[5] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[4] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[3] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[2] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0] in module states is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1034.129 ; gain = 544.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1034.129 ; gain = 544.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1034.129 ; gain = 544.438
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'states'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  STATE0 |                             0001 |                               00
+                  STATE1 |                             0010 |                               01
+                  STATE2 |                             0100 |                               10
+                  STATE3 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'states'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1034.129 ; gain = 544.438
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port txd in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[7] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[6] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[5] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[4] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[3] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[2] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1] in module states is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0] in module states is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:44 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:44 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT2  |     3|
+|3     |LUT3  |     2|
+|4     |LUT4  |     2|
+|5     |LUT5  |     1|
+|6     |FDRE  |     8|
+|7     |FDSE  |     1|
+|8     |IBUF  |     3|
+|9     |OBUF  |     2|
+|10    |OBUFT |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    24|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.582 ; gain = 760.891
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.582 ; gain = 760.891
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1250.582 ; gain = 760.891
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1257.316 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1357.504 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+System nie mo¾e odnale«† okre˜lonej ˜cie¾ki.
+Synth Design complete | Checksum: 246f56c6
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:54 . Memory (MB): peak = 1357.504 ; gain = 874.016
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1357.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.runs/synth_1/states.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file states_utilization_synth.rpt -pb states_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 08:07:49 2024...

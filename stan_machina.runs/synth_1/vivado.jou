@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Mar 18 08:06:44 2024
+# Process ID: 15968
+# Current directory: C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.runs/synth_1
+# Command line: vivado.exe -log states.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source states.tcl
+# Log file: C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.runs/synth_1/states.vds
+# Journal file: C:/Studia/Semestr_6/Systemy_Rekonfigurowalne/stan_machina/stan_machina.runs/synth_1\vivado.jou
+# Running On: DESKTOP-QB8TK5V, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 4, Host memory: 34182 MB
+#-----------------------------------------------------------
+source states.tcl -notrace
